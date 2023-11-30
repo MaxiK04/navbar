@@ -1,0 +1,221 @@
+.nav-item{
+  text-decoration-color: #000;
+}
+.navbar {
+  background: grey !important;
+  }
+  .nav-link{
+  color:#15798b;
+  cursor: pointer;
+  margin-left: lem
+  }
+  .nav-link{
+  margin-right: lem !important;
+  }
+  .nav-link:hover{
+  background:#7810da;
+  color: #26154e;
+  }
+  .navbar-collapse{
+  justify-content:flex-end;
+  }
+  .navbar-toggler{
+  background: #2ba1c5 !important;
+  }
+  .header{
+    position: relative;
+    background-image: url('../images/12.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .overplay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244,244,244, 0.7);
+  }
+  .description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+  }
+  .description h1{
+    color: #000;
+  }
+  .description h1{
+    color: black;
+  }
+  .description p{
+    color: #666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+  }
+  .description button{
+    border: 1px solid purple;
+    background-color: #1d282b;
+    color: #fff;
+  }
+  .about{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+  }
+  .about h1{
+    color: red;
+    margin: 2em;
+  }
+  .about img{
+    height: 50%;
+    width: 100%;
+    border-radius: 30%;
+  }
+  .about span{
+    display: block;
+    color: green;
+    position:absolute;
+    left: 500px;
+  }
+  .about .desc{
+    padding: 2em;
+    border-left: 4px solid blue ;
+  }
+  .about .desc h3{
+    color: blue;
+  }
+  .about .desc p{
+    line-height: 2;
+    color: grey;
+  }
+  .carousel {
+    height: 50% !important;
+  }
+  .carousel-inner img {
+    height: 900px !important;
+    margin: 0 auto;
+  }
+  .carousel-indicators li {
+    border-color: #000;
+  }
+  .carousel-indicators .active {
+    background-color: #000;
+  }
+  .contact-form{
+    padding: 100px;
+  }
+  .contact-form h1{
+    font-size: 100px;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+.world{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("img/sky.jpg");
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.highway{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url("img/road.jpg");
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+
+@keyframes highway{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+
+.city{
+    height: 250px;
+    width: 500%;
+    background-image: url("img/city.png");
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+@keyframes city{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+.car{
+    width: 400px;
+    position: relative;;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.car img{
+    margin-top: 100px;
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+.wheel{
+    left: 50%;
+    position: absolute;
+    bottom: 171px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.wheel img{
+    width: 65px;
+    height: 65px;
+    animation: wheel 1s linear infinite;
+}
+
+.back-wheel{
+    left: -146px;
+    position: absolute;
+}
+.front-wheel{
+    left: 100px;
+    position: absolute;
+}
+
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
